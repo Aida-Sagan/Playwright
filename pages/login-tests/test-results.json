@@ -1,0 +1,376 @@
+{
+  "config": {
+    "configFile": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/playwright.config.js",
+    "rootDir": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.1",
+    "workers": 11,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.test.js",
+      "file": "login.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page Tests",
+          "file": "login.test.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Valid login should redirect to /logged-in-successfully/",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30062,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js",
+                            "column": 25,
+                            "line": 19
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../LoginPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m,\u001b[39m { state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m \u001b[90m// Явное ожидание\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m     \u001b[0m\n\u001b[2m    at LoginPage.login (/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js:19:25)\u001b[22m\n\u001b[2m    at /home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests/login.test.js:8:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-15T05:21:15.694Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Val-928ef--to-logged-in-successfully-/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Val-928ef--to-logged-in-successfully-/video.webm"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30056,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js",
+                            "column": 25,
+                            "line": 19
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../LoginPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m,\u001b[39m { state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m \u001b[90m// Явное ожидание\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m     \u001b[0m\n\u001b[2m    at LoginPage.login (/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js:19:25)\u001b[22m\n\u001b[2m    at /home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests/login.test.js:8:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-03-15T05:21:46.133Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Val-928ef--to-logged-in-successfully--retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Val-928ef--to-logged-in-successfully--retry1/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "087306b8335cdced5c6c-9c65581c08061e15b5fa",
+              "file": "login.test.js",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Invalid password should show error message",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30052,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js",
+                            "column": 25,
+                            "line": 19
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../LoginPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m,\u001b[39m { state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m \u001b[90m// Явное ожидание\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m     \u001b[0m\n\u001b[2m    at LoginPage.login (/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js:19:25)\u001b[22m\n\u001b[2m    at /home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests/login.test.js:16:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-15T05:22:16.569Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Inv-acb7f-d-should-show-error-message/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Inv-acb7f-d-should-show-error-message/video.webm"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30059,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js",
+                            "column": 25,
+                            "line": 19
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../LoginPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m,\u001b[39m { state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m \u001b[90m// Явное ожидание\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m     \u001b[0m\n\u001b[2m    at LoginPage.login (/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js:19:25)\u001b[22m\n\u001b[2m    at /home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests/login.test.js:16:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-03-15T05:22:46.994Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Inv-acb7f-d-should-show-error-message-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Inv-acb7f-d-should-show-error-message-retry1/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "087306b8335cdced5c6c-995fbeb76e596791cb0c",
+              "file": "login.test.js",
+              "line": 13,
+              "column": 9
+            },
+            {
+              "title": "Account lockout after 3 failed attempts",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "timedOut",
+                      "duration": 30067,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js",
+                            "column": 25,
+                            "line": 19
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../LoginPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m,\u001b[39m { state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m \u001b[90m// Явное ожидание\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m     \u001b[0m\n\u001b[2m    at LoginPage.login (/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js:19:25)\u001b[22m\n\u001b[2m    at /home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests/login.test.js:27:13\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-15T05:23:17.435Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Acc-872de-out-after-3-failed-attempts/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Acc-872de-out-after-3-failed-attempts/video.webm"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 5,
+                      "status": "timedOut",
+                      "duration": 30051,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js",
+                            "column": 25,
+                            "line": 19
+                          },
+                          "message": "Error: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[type=\"submit\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../LoginPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m,\u001b[39m { state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m \u001b[90m// Явное ожидание\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m     \u001b[0m\n\u001b[2m    at LoginPage.login (/home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/LoginPage.js:19:25)\u001b[22m\n\u001b[2m    at /home/idoc/WebstormProjects/playwright_lesson/Playwright/pages/login-tests/tests/login.test.js:27:13\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-03-15T05:23:47.870Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Acc-872de-out-after-3-failed-attempts-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/idoc/WebstormProjects/playwright_lesson/Playwright/test-results/login-Login-Page-Tests-Acc-872de-out-after-3-failed-attempts-retry1/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "087306b8335cdced5c6c-0218334bd3abadc2f42f",
+              "file": "login.test.js",
+              "line": 22,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-15T05:21:15.395Z",
+    "duration": 182628.10199999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
